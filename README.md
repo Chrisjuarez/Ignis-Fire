@@ -108,7 +108,8 @@ cd ignis-ai-backend
 New-Item .env -ItemType File
 ```
 
-### **Edit .env File**
+### **Edit .env File(optional)**
+The .env will be provided with these keys inside the repository. 
 
 Open `.env` in your code editor and add the following lines:
 
@@ -132,6 +133,10 @@ source venv/bin/activate          # activate venv
 pip install tensorflow scikit-learn pandas numpy joblib tqdm requests   # install all required Python packages
 # Once you're done working in this environment, run:
 deactivate                         # exit the virtual environment
+```
+###Tip: If Tensorflow gives an error its okay you dont need it to run the project. Its just for the ML model. Try:
+```
+pip install scikit-learn pandas numpy joblib tqdm requests
 ```
 
 #### Windows (PowerShell / VSCode)
@@ -162,10 +167,15 @@ Make sure the Python path used in `predictfirespread.js` is aligned with your ve
 Then run:
 ```bash
 npm start
-```  
+```
+Or 
+run:
+```
+node app.js
+```
 Verify you see:
 ```
-Server started on port 5001
+Server started on port 5000 or 5001
 MongoDB connected successfully
 ```
 
@@ -184,6 +194,7 @@ In `.env`, set:
 REACT_APP_MAPBOX_TOKEN=<your Mapbox public token>
 REACT_APP_API_BASE_URL=http://localhost:5001/api
 ```
+###Note: Frontend .env will be provided so no need to touch .env.
 
 Also ensure `api.js` reflects the same port (5001):
 ```javascript
