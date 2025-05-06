@@ -12,7 +12,7 @@
 **/.ipynb_checkpoints/
 
 # Environment files
-*.env
+
 
 # macOS / Windows cruft
 .DS_Store
