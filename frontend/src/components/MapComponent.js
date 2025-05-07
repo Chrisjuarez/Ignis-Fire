@@ -293,7 +293,7 @@ const MapComponent = forwardRef(({
     
     let popupContent = '';
     
-    if (spreadProbability < 10) {
+    if (spreadProbability < 9) {
       // Simple message for low probability
       popupContent = `
         <div class="wildfire-popup">
