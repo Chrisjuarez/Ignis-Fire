@@ -85,12 +85,12 @@ ignis-ai-frontend/
 ### 2.1 Install Backend Dependencies (Node)
 
 ```bash
-cd ignis-ai-backend
+cd backend
 npm install
 ```  
 > **Same** on macOS, Linux, or VSCode terminal in Windows.
 
-### 2.2 **Create & Configure `.env`**
+### 2.2 **Create & Configure `.env` (.env provided)**
 
 We default to `PORT=5000`, but on macOS, port 5000 is often in use, so you can change it to `5001`.
 
@@ -98,7 +98,7 @@ We default to `PORT=5000`, but on macOS, port 5000 is often in use, so you can c
 
 **macOS/Linux:**
 ```bash
-cd ignis-ai-backend
+cd backend
 touch .env
 ```
 
@@ -153,7 +153,7 @@ Note: **`deactivate`** simply returns your shell to its original state; only use
 
 ### 2.4 Pre‑trained Model Files
 
-Copy (or confirm) these into `ignis-ai-backend/ml/`:
+Copy (or confirm) these into `backend/ml/`:
 ```
 wildfire_spread_classifier_advanced.joblib
 wildfire_spread_regressor_advanced.joblib
@@ -185,7 +185,7 @@ MongoDB connected successfully
 Open a **new** terminal/tab:
 
 ```bash
-cd ignis-ai-frontend
+cd frontend
 npm install
 touch .env  # or create manually on Windows
 ```  
@@ -212,7 +212,7 @@ App runs at **http://localhost:3000** (API calls proxy to `http://localhost:5001
 
 If you want to retrain on Kaggle’s TFRecords:
 
-1. Place TFRecords under `ignis-ai-backend/ml/data/`
+1. Place TFRecords under `/ml/data/`
 2. Activate your Python venv (see 2.2)
 3. Run:
    ```bash
