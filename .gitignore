@@ -1,6 +1,7 @@
 # Node.js
 /frontend/node_modules/
 /backend/node_modules/
+/backend/ml/node_modules/
 
 # Python venvs & caches
 /backend/venv/
@@ -12,8 +13,26 @@
 **/.ipynb_checkpoints/
 
 # Environment files
-
+/backend/ .env/
+/frontend/ .env/ 
+.env.*
 
 # macOS / Windows cruft
+.DS_Store
+Thumbs.db
+# Node modules
+node_modules/
+
+# Python venv
+venv/
+backend/ml/venv/
+
+# Environment files
+.env
+.env.*
+backend/.env
+frontend/.env
+
+# macOS system files
 .DS_Store
 Thumbs.db
